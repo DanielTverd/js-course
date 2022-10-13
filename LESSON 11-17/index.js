@@ -123,5 +123,32 @@ global - node.js
 
 Чтобы не путатся решили создать унифицированный глобальный объект :
 
-globalThis ! 
+globalThis !
+-------------------------------------------------------------------
+Методы - это свойства объекта , значение которого функция !!!
+
+Пример №1:
+
+const myCity = {
+    city: 'New York',
+    cityGreeting: function () {
+        console.log('Greetings!!')
+    }
+}
+myCity.cityGreeting() - 'Greetings!!'
+
+Пример №2:
+
+const myCity = {
+    city: 'New York',
+    cityGreeting() {
+        console.log('Greetings!!')
+    }
+}
+myCity.cityGreeting() - 'Greetings!!'
+
+Методы vs Свойства объектов
+
+myCity.city - доступ к значению
+myCity.cityGreeting() - вызов метода
 */
