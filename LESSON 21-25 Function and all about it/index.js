@@ -73,4 +73,65 @@ function myFn () {}
 myFn() - undefined
 -----------------------------------------------------------
 Передача значений по ссылке
+Пример ниже :
+
+const personOne = {
+    name: 'Bob',
+    age: 21
+}
+
+function increasePersonAge(persone) {
+    person.age += 1                                 функция мутирует внешний объект
+    return person
+}
+
+increasePersonAge(personOne) - передача объекта по ссылке
+console.log(personeOne.age) - 22
+
+
+ВНУТРИ ФУНКЦИИ НЕ РЕКОМЕНДУЕТСЯ МУТИРОВАТЬ ВНЕШНИЕ ОБЪЕКТЫ !!!
+
+КАК ИЗБЕЖАТЬ ЭТОГО ?
+
+ПРИМЕР:
+
+const personOne = {
+    name: 'Bob',
+    age: 21
+}
+
+function increasePersonAge(persone) {
+    const updatedPerson = Object.assign({}, person)
+    person.age += 1                               
+    return upDatedPerson
+}
+
+const updatedPersonOne = increasePersonAge(personOne)
+console.log(personeOne.age) - 21
+console.log(updatedPersonOne.age) - 22
+-----------------------------------------------------------
+КОЛБЭК ФУНКЦИИ
+
+function anotherFunction() {
+    //действия...
+}
+
+function fnWithCallback(callbackFunction) {
+    callbackFunction()                          в теле этой функции вызывается колбэк функуция
+}
+
+fnWithCallback(anotherFunction)
+
+Пример:
+
+// function printMyName() {
+//     console.log('Daniel')
+// }
+// setTimeout(printMyName, 1000) //функция printMyName будет вызвана через 1000 милисекунд
+-----------------------------------------------------------
+ПРАВИЛА РАБОТЫ С ФУНКЦИЯМИ
+
+1. Называть функции исходя из выполняемых задач.
+2. Одна функция должна выполнять одну задачу.
+3. Не рекомендуется изменять внешние относительно функции переменные.
 */
