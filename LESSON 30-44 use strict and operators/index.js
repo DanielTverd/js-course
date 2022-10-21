@@ -103,7 +103,19 @@ false
 undefined
 null
 ----------------------------------------------------
+Практика с typeof оператором
+typeof -- унарный , префиксный оператор
 
-----------------------------------------------------
-
+// typeof 10
+// 'number'
+// typeof ''
+// 'string'
+// typeof 10 === 'number'
+// true
+// typeof alert
+// 'function'
+// let isUndefined
+// undefined
+// typeof isUndefined === 'undefined'
+// true
 */
