@@ -172,4 +172,36 @@ c && console.log('Выполнення')
 
 a && b && c && d
 a || b || c || d
+----------------------------------------------------
+Оператор разделения объекта на свойства (...) -- три точки
+Пример :
+
+const button = {
+    width: 200,
+    text: 'Buy'
+}
+const redButton = {
+    ...button,
+    color: 'red'            //если у объекта "button" есть свойство "color", его значение будет перезаписано
+}
+console.table(redButton)
+
+Объединение объектов с помощью ...
+Пример ниже
+
+const buttonInfo = {
+    text: 'Buy'
+}
+const buttonStyle = {
+    color: 'yellow',
+    width: 200,
+    height: 300
+}
+const button = {
+    ...buttonInfo
+    ...buttonStyle
+}
+console.table(button)
+----------------------------------------------------
+
 */
