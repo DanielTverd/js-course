@@ -82,12 +82,22 @@ a => {
 В этом случае стрелочная функция неявно возвращает результат выражения
 -------------------------------------------------------------------------
 Значение параметров функции по умолчанию
-
+Пример №1
 function multByFactor(value, multiplier = 1) {
     return value * multiplier
 }
 multByFactor(10, 2) //20
 multByFactor(5) //5
 
+Пример №2
 
+const newPost = (post, addedAt = Data()) => ({        Data() - значение по умолчанию вычисляются в момент вызова функции.
+    ...post,                                         ({ -- неявный возврат объекта
+    addedAt,
+})
+const firstPost = {
+    id: 1,
+    author: 'Daniel',
+}
+newPost(firstPost)
 */
