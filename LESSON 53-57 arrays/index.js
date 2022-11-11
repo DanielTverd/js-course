@@ -80,5 +80,46 @@ console.log(myArray) //[1, 2, 'abc', 4, true]
 console.log(myArray.length) //5
 ------------------------------------------------------------------------------------------------------
 Методы массивов
+(Функции прототипов (высшего порядка))
+Примеры ниже (основные)
+
+push
+pop
+shift
+unshift
+forEach
+map
+////////////////
+PUSH пример:
+Это добавление нового элемента в массив
+const myArray = [1, 2, 3]
+console.log(myArray)//[1, 2, 3]
+myArray.push(4)
+console.log(myArray)//[1, 2, 3, 4]
+myArray.push(true)
+console.log(myArray)//[1, 2, 3, 4, true]
+////////////////
+POP пример:
+удаление последнего элемента в массиве
+const myArray = [1, 2, 3]
+console.log(myArray)//[1, 2, 3]
+myArray.pop()
+console.log(myArray)//[1, 2]
+
+const removedElement = myArray.pop()
+console.log(myArray)//[1]
+console.log(removedElement)//2
+////////////////
+Unshift пример:
+добавить элемент в начале массива
+const myArray = [1, 2, 3]
+console.log(myArray)//[1, 2, 3]
+myArray.unshift(true)
+console.log(myArray)//[true, 1, 2, 3]
+myArray.unshift('abc')
+console.log(myArray)//['abc', true, 1, 2, 3]
+////////////////
+SHIFT пример:
+этот элемент удаляет первый элемент в массиве
 
 */
