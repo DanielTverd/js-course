@@ -129,5 +129,5 @@ const removedElement = myArray.shift()
 console.log(myArray)//[3]
 console.log(removedElement)//2
 
-VV
+Тема массивов была пройдена! Доработка и получение новой инфы дальше!
 */
