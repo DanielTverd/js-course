@@ -71,4 +71,14 @@ for (let = 0; i < myArray.length; i++) {
 //'second'
 //'third'
 
+Лучше использовать метод массивов forEach:
+
+const myArray = ['first', 'second', 'third']
+myArray.forEach((element, index) => {
+    console.log(element, index)
+})
+//'first' 0
+//'second' 1
+//'third' 2
+
 */
