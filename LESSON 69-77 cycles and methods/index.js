@@ -152,14 +152,25 @@ for (const key in myObject) {
 -----------------------------------------
 Методы keys и values для объектов
 
-пример:
+пример: forEach для объектов
 
 const myObject = {
     x: 10,
     y: true,
     z: 'abc'
 }
-Object.keys(myObject).forEach(key => {
+Object.keys(myObject).forEach(key => {      //получение всех КЛЮЧЕЙ объекта в виде массива Object.keys(myObject)
     console.log(key, myObject[key])
+})
+
+пример: forEach для объектов
+
+const myObject = {
+    x: 10,
+    y: true,
+    z: 'abc'
+}
+Object.values(myObject).forEach(value => {
+    console.log(value)
 })
 */
