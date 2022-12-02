@@ -149,5 +149,17 @@ for (const key in myObject) {
 //x 10
 //y true
 //z abc
+-----------------------------------------
+Методы keys и values для объектов
 
+пример:
+
+const myObject = {
+    x: 10,
+    y: true,
+    z: 'abc'
+}
+Object.keys(myObject).forEach(key => {
+    console.log(key, myObject[key])
+})
 */
