@@ -162,6 +162,9 @@ const myObject = {
 Object.keys(myObject).forEach(key => {      //получение всех КЛЮЧЕЙ объекта в виде массива Object.keys(myObject)
     console.log(key, myObject[key])
 })
+//x 10
+//y true
+//z abc
 
 пример: forEach для объектов
 
@@ -170,7 +173,12 @@ const myObject = {
     y: true,
     z: 'abc'
 }
-Object.values(myObject).forEach(value => {
+Object.values(myObject).forEach(value => {  //получение всех ЗНАЧЕНИЙ СВОЙСТВ объекта в виде массива Object.value(myObject)
     console.log(value)
 })
+//10
+//true
+//abc
+-----------------------------------------
+
 */
