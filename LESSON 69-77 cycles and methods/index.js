@@ -180,6 +180,10 @@ Object.values(myObject).forEach(value => {  //получение всех ЗНА
 //true
 //abc
 -----------------------------------------
+ЦИКЛ for in ДЛЯ МАССИВОВ
 
-
+const myArray = [true, 10, 'abc', null]
+for (const key in myArray) {
+    console.log(myArray[key])
+}
 */
