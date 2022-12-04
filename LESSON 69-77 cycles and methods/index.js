@@ -211,4 +211,31 @@ const myArray = [true, 10, 'abc', null]
 for (const element of myArray) {
     consol.log(element)
 }
+//true
+//10
+//abc
+//null
+
+Более приоритетный метод массивов forEach
+
+const myArray = [true, 10, 'abc', null]
+myArray.forEach(element => {
+    console.log(element)
+})
+//true
+//10
+//'abc'
+//null
+
+for of НЕ для ОБЪЕКТОВ
+
+let myObject = {
+    x: 10,
+    y: true,
+    z: 'abc'
+}
+for (const prop of myObject) {
+    console.log(prop)
+}
+//ЭТО НЕ ИТЕРИРУЕМЫЙ ЭЛЕМЕНТ В JS!!!
 */
