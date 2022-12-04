@@ -189,4 +189,26 @@ for (const key in myArray) {
 -----------------------------------------
 ЦИКЛ for of
 
+пример:
+
+for (Element of Iterable) {         //Iterable - любое значения, или переменная которая содержит значение. Елементы которого можно перебирать
+    //Дейсвия с определенным элементом
+}
+
+пример1:
+
+const myString = 'Hey'
+for (const letter of myString) {
+    console.log(letter)
+}
+//H
+//e
+//y
+
+пример2:
+
+const myArray = [true, 10, 'abc', null]
+for (const element of myArray) {
+    consol.log(element)
+}
 */
