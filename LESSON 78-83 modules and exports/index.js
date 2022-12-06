@@ -20,4 +20,5 @@ moduleTwo.js
 import printMyName from './moduleOne.js'        //Названия переменных могут не совпадать
 printMyName() //Daniel
 -------------------------------------------------
+
 */
