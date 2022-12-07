@@ -21,6 +21,19 @@ import printMyName from './moduleOne.js'        //Названия переме�
 printMyName() //Daniel
 -------------------------------------------------
 Создание и запуск модулей с помощью Node
+пример:
 
+moduleOne.mjs
+
+const sum = (a, b) => a + b
+export default sum
+
+moduleTwo.mjs
+
+import sum from './moduleOne.mjs'
+const res1 = sum(10, 2)
+console.log(res1)
+
+пример2:
 
 */
