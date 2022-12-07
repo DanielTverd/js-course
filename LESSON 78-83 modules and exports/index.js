@@ -36,4 +36,14 @@ console.log(res1)
 
 пример2:
 
+moduleOne.mjs
+
+const sum = (a, b) => a + b
+export default sum
+
+moduleTwo.mjs
+
+import sumNumbers from './moduleOne.mjs'
+const res = sumNumbers(10, 2)
+console.log(res)
 */
