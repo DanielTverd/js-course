@@ -33,6 +33,7 @@ moduleTwo.mjs
 import sum from './moduleOne.mjs'
 const res1 = sum(10, 2)
 console.log(res1)
+//12
 
 пример2:
 
@@ -46,4 +47,7 @@ moduleTwo.mjs
 import sumNumbers from './moduleOne.mjs'
 const res = sumNumbers(10, 2)
 console.log(res)
+//12
+-------------------------------------------------
+
 */
