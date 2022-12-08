@@ -69,4 +69,25 @@ import {
 } from './moduleOne.js'
 console.log(one)//1
 console.log(two)//'two'
+
+Переименование импортов
+пример:
+
+moduleOne.js
+
+const one = 1
+const two = 'two'
+export {
+    one,
+    two
+}
+
+moduleTwo.js
+
+import {
+    one as oneRenamed,
+    two
+} from './moduleOne.js'
+console.log(oneRenamed)//1
+console.log(two)//'two'
 */
