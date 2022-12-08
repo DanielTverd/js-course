@@ -49,5 +49,19 @@ const res = sumNumbers(10, 2)
 console.log(res)
 //12
 -------------------------------------------------
+Несколько экспортов
+пример:
+
+moduleOne.js
+
+const one = 1
+const two = 'two'
+export {
+    one,
+    two
+}
+
+moduleTwo.js
+
 
 */
