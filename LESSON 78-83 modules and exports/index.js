@@ -90,4 +90,6 @@ import {
 } from './moduleOne.js'
 console.log(oneRenamed)//1
 console.log(two)//'two'
+
+Node.Js поддерживает ES6 модули, начиная с версии 13
 */
