@@ -101,4 +101,20 @@ Node.Js поддерживает ES6 модули, начиная с верси�
 4. По возможности используйте export default.
 -------------------------------------------------
 Практика по созданию нескольних экспортов
+пример:
+
+moduleOne.js
+
+const sum = (a, b) => a + b
+const mult = (a, b) => a * b
+export {
+    sum,
+    mult
+}
+
+moduleTwo.js
+
+import { sum, mult as multNumbers } from './moduleOne.js'
+console.log(sum(10, 2))//12
+console.log(multNumbers(10, 2))//20
 */
