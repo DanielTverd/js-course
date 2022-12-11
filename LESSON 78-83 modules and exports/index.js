@@ -118,5 +118,5 @@ import { sum, mult as multNumbers } from './moduleOne.js'
 console.log(sum(10, 2))//12
 console.log(multNumbers(10, 2))//20
 -------------------------------------------------
-
+Как используются модули в React
 */
