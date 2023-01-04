@@ -36,6 +36,11 @@ class Comment {
 }
 
 const firstComment = new Comment('First comment')       вызывается функция constructor (создание экземпляра)
+
+после создания появляются у переменной свои свойства экземпляра
+
+const firstComment = new Comment('First comment')
+console.log(firstComment) 
 -----------------------------------------
 -----------------------------------------
 -----------------------------------------
