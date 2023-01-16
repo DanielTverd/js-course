@@ -51,5 +51,5 @@ console.log(firstComment)
 Цепочка прототипов
 
 firstComment => Comment => Object
-
+-----------------------------------------
 */
